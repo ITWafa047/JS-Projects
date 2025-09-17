@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="calculator" aria-label="Calculator">
+        <!-- Display -->
+        <input class="display" id="display" value="0" readonly>
+        <!-- Buttons -->
+        <div class="keys" id="keys">
+            <!--  Start Row 1 -->
+            <button class="op" data-type="clear">C</button>
+            <button class="op" data-type="delete"><i class="fa-solid fa-delete-left"></i></button>
+            <button class="op" data-type="percent" data-value="%">%</button>
+            <button class="op" data-type="operator" data-value="÷">÷</button>
+            <!-- End Row 1 -->
+            <!-- Start Row 2 -->
+            <button data-type="digit" data-value="7">7</button>
+            <button data-type="digit" data-value="8">8</button>
+            <button data-type="digit" data-value="9">9</button>
+            <button class="op" data-type="operator" data-value="×">×</button>
+            <!-- End Row 2 -->
+            <!-- Start Row 3 -->
+            <button data-type="digit" data-value="4">4</button>
+            <button data-type="digit" data-value="5">5</button>
+            <button data-type="digit" data-value="6">6</button>
+            <button class="op" data-type="operator" data-value="-">-</button>
+            <!-- End Row 3 -->
+            <!-- Start Row 4 -->
+            <button data-type="digit" data-value="1">1</button>
+            <button data-type="digit" data-value="2">2</button>
+            <button data-type="digit" data-value="3">3</button>
+            <button class="op" data-type="operator" data-value="+">+</button>
+            <!-- End Row 4 -->
+            <!-- Start Row 5 -->
+            <button class="span-2" data-type="digit" data-value="0">0</button>
+            <button data-type="decimal">.</button>
+            <button class="equal" data-type="equals">=</button>
+            <!-- End Row 5 -->
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
