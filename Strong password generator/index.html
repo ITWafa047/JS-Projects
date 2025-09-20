@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Password Generator</title>
+    <link rel="stylesheet" href="./master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="card">
+        <h1>Strong Password Generator</h1>
+
+        <div class="controls">
+            <label>
+                Password Length
+                <input id="length" type="number" min="4" max="64" value="12">
+            </label>
+
+            <label>
+                <input id="lowercase" type="checkbox" checked>
+                Lowercase letters (a–z)
+            </label>
+
+            <label>
+                <input id="uppercase" type="checkbox" checked>
+                Uppercase letters (A–Z)
+            </label>
+
+            <label>
+                <input id="numbers" type="checkbox" checked>
+                Numbers (0–9)
+            </label>
+
+            <label>
+                <input id="symbols" type="checkbox">
+                Special characters (!@#$%)
+            </label>
+        </div>
+
+        <div class="actions">
+            <button id="generate">Generate</button>
+            <button id="copy">Copy</button>
+        </div>
+
+        <div class="output">
+            <input id="password" readonly placeholder="The password will be displayed here">
+            <div id="strength" class="strength">Strength: </div>
+        </div>
+
+        <div class="history-list">
+            <h2>List of recently generated passwords</h2>
+            <ul id="history"></ul>
+        </div>
+
+        <details class="info">
+            <summary>Why use a strong password?</summary>
+            <p>A strong password reduces the risk of brute-force and guessing attacks. The longer the password is and
+                the more different types of characters it contains, the more difficult it is to crack.</p>
+        </details>
+    </main>
+    <script src="./main.js"></script>
+</body>
+
+</html>
